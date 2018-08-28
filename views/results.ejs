@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+        <h1>Sonuçlar</h1>
+
+        <ul>
+                <% data["results"].forEach(function(film){ %>
+            
+                <li>
+                    Film Adı :
+                    <strong>
+                        
+                        <%=film["title"] %>
+                    </strong>
+                        ---
+                        imdb :
+                        <%=film["vote_average"] %>
+                        ---
+                        Description : 
+                        <%=film["overview"] %>
+                </li>
+            
+                <%  }) %>
+            </ul>
+            
+            <a href="/">Başka Film Ara</a>
+    
+</body>
+</html>
+
+
